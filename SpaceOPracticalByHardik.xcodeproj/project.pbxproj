@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185D815C25826DBE00C664FA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D815B25826DBE00C664FA /* CustomCell.swift */; };
 		18A634ED258238EE00A19A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A634EC258238EE00A19A66 /* AppDelegate.swift */; };
 		18A634EF258238EE00A19A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A634EE258238EE00A19A66 /* SceneDelegate.swift */; };
 		18A634F1258238EE00A19A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A634F0258238EE00A19A66 /* ViewController.swift */; };
@@ -14,9 +15,22 @@
 		18A634F7258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A634F5258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodeld */; };
 		18A634F9258238EF00A19A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A634F8258238EF00A19A66 /* Assets.xcassets */; };
 		18A634FC258238EF00A19A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A634FA258238EF00A19A66 /* LaunchScreen.storyboard */; };
+		18A635382582428400A19A66 /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A635372582428400A19A66 /* DbManager.swift */; };
+		18A6353C258243B200A19A66 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6353B258243B200A19A66 /* String+Extension.swift */; };
+		18A635402582458400A19A66 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6353F2582458400A19A66 /* UIButton+Extension.swift */; };
+		18A635432582475100A19A66 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A635422582475100A19A66 /* UIView+Extension.swift */; };
+		18A6354725824B0B00A19A66 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6354625824B0B00A19A66 /* Helper.swift */; };
+		18A6354C25824C4900A19A66 /* EmptyStateGenericScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6354A25824C4800A19A66 /* EmptyStateGenericScreen.swift */; };
+		18A6354D25824C4900A19A66 /* EmptyStateGenericScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A6354B25824C4900A19A66 /* EmptyStateGenericScreen.xib */; };
+		18A6355425824F7800A19A66 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 18A6355325824F7800A19A66 /* Fonts */; };
+		18A635572582514400A19A66 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A635562582514400A19A66 /* UIImageView+Extension.swift */; };
+		18A6355A258269B500A19A66 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A63559258269B500A19A66 /* Api.swift */; };
+		18A6356225826A4100A19A66 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6356125826A4100A19A66 /* Model.swift */; };
+		3F0B7E4DA609B55FAFAF8E4D /* Pods_SpaceOPracticalByHardik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BFBA75377E33FBD39776F7 /* Pods_SpaceOPracticalByHardik.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185D815B25826DBE00C664FA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		18A634E9258238EE00A19A66 /* SpaceOPracticalByHardik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceOPracticalByHardik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A634EC258238EE00A19A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A634EE258238EE00A19A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +39,21 @@
 		18A634F6258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceOPracticalByHardik.xcdatamodel; sourceTree = "<group>"; };
 		18A634F8258238EF00A19A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A634FB258238EF00A19A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18A634FD258238EF00A19A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A634FD258238EF00A19A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SpaceOPracticalByHardik/Info.plist; sourceTree = SOURCE_ROOT; };
+		18A635372582428400A19A66 /* DbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
+		18A6353B258243B200A19A66 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		18A6353F2582458400A19A66 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		18A635422582475100A19A66 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		18A6354625824B0B00A19A66 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		18A6354A25824C4800A19A66 /* EmptyStateGenericScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateGenericScreen.swift; sourceTree = "<group>"; };
+		18A6354B25824C4900A19A66 /* EmptyStateGenericScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyStateGenericScreen.xib; sourceTree = "<group>"; };
+		18A6355325824F7800A19A66 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		18A635562582514400A19A66 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		18A63559258269B500A19A66 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		18A6356125826A4100A19A66 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		921B62D86EF8A68031A7024B /* Pods-SpaceOPracticalByHardik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceOPracticalByHardik.release.xcconfig"; path = "Target Support Files/Pods-SpaceOPracticalByHardik/Pods-SpaceOPracticalByHardik.release.xcconfig"; sourceTree = "<group>"; };
+		A03F119CF10FF59A8E213A79 /* Pods-SpaceOPracticalByHardik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceOPracticalByHardik.debug.xcconfig"; path = "Target Support Files/Pods-SpaceOPracticalByHardik/Pods-SpaceOPracticalByHardik.debug.xcconfig"; sourceTree = "<group>"; };
+		C7BFBA75377E33FBD39776F7 /* Pods_SpaceOPracticalByHardik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceOPracticalByHardik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0B7E4DA609B55FAFAF8E4D /* Pods_SpaceOPracticalByHardik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185D815A25826D9400C664FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				185D815B25826DBE00C664FA /* CustomCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		18A634E0258238EE00A19A66 = {
 			isa = PBXGroup;
 			children = (
 				18A634EB258238EE00A19A66 /* SpaceOPracticalByHardik */,
 				18A634EA258238EE00A19A66 /* Products */,
+				DC027A564C5A6B9FF88A5296 /* Pods */,
+				2BC8B6AA89201EDC55E01288 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +97,101 @@
 		18A634EB258238EE00A19A66 /* SpaceOPracticalByHardik */ = {
 			isa = PBXGroup;
 			children = (
-				18A634EC258238EE00A19A66 /* AppDelegate.swift */,
-				18A634EE258238EE00A19A66 /* SceneDelegate.swift */,
-				18A634F0258238EE00A19A66 /* ViewController.swift */,
-				18A634F2258238EE00A19A66 /* Main.storyboard */,
-				18A634F8258238EF00A19A66 /* Assets.xcassets */,
-				18A634FA258238EF00A19A66 /* LaunchScreen.storyboard */,
 				18A634FD258238EF00A19A66 /* Info.plist */,
-				18A634F5258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodeld */,
+				185D815A25826D9400C664FA /* Cells */,
+				18A6356025826A3100A19A66 /* Models */,
+				18A6355125824CFB00A19A66 /* Controllers */,
+				18A6355025824CD200A19A66 /* Resource */,
+				18A6354F25824CB900A19A66 /* Views */,
+				18A6354525824AF700A19A66 /* Util */,
+				18A6353A2582439800A19A66 /* Extension */,
+				18A635362582426100A19A66 /* ApiManager */,
 			);
 			path = SpaceOPracticalByHardik;
+			sourceTree = "<group>";
+		};
+		18A635362582426100A19A66 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				18A635372582428400A19A66 /* DbManager.swift */,
+				18A63559258269B500A19A66 /* Api.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		18A6353A2582439800A19A66 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18A6353B258243B200A19A66 /* String+Extension.swift */,
+				18A6353F2582458400A19A66 /* UIButton+Extension.swift */,
+				18A635422582475100A19A66 /* UIView+Extension.swift */,
+				18A635562582514400A19A66 /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18A6354525824AF700A19A66 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18A6354A25824C4800A19A66 /* EmptyStateGenericScreen.swift */,
+				18A6354625824B0B00A19A66 /* Helper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		18A6354F25824CB900A19A66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A6354B25824C4900A19A66 /* EmptyStateGenericScreen.xib */,
+				18A634F2258238EE00A19A66 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18A6355025824CD200A19A66 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18A6355325824F7800A19A66 /* Fonts */,
+				18A634FA258238EF00A19A66 /* LaunchScreen.storyboard */,
+				18A634F5258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodeld */,
+				18A634EC258238EE00A19A66 /* AppDelegate.swift */,
+				18A634EE258238EE00A19A66 /* SceneDelegate.swift */,
+				18A634F8258238EF00A19A66 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18A6355125824CFB00A19A66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A634F0258238EE00A19A66 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18A6356025826A3100A19A66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18A6356125826A4100A19A66 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BC8B6AA89201EDC55E01288 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BFBA75377E33FBD39776F7 /* Pods_SpaceOPracticalByHardik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC027A564C5A6B9FF88A5296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A03F119CF10FF59A8E213A79 /* Pods-SpaceOPracticalByHardik.debug.xcconfig */,
+				921B62D86EF8A68031A7024B /* Pods-SpaceOPracticalByHardik.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A63500258238EF00A19A66 /* Build configuration list for PBXNativeTarget "SpaceOPracticalByHardik" */;
 			buildPhases = (
+				324729013CAACBE5476AD461 /* [CP] Check Pods Manifest.lock */,
 				18A634E5258238EE00A19A66 /* Sources */,
 				18A634E6258238EE00A19A66 /* Frameworks */,
 				18A634E7258238EE00A19A66 /* Resources */,
+				2D2BF15DDE5DF9DA727A4D19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,7 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A6355425824F7800A19A66 /* Fonts in Resources */,
 				18A634FC258238EF00A19A66 /* LaunchScreen.storyboard in Resources */,
+				18A6354D25824C4900A19A66 /* EmptyStateGenericScreen.xib in Resources */,
 				18A634F9258238EF00A19A66 /* Assets.xcassets in Resources */,
 				18A634F4258238EE00A19A66 /* Main.storyboard in Resources */,
 			);
@@ -135,15 +263,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D2BF15DDE5DF9DA727A4D19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceOPracticalByHardik/Pods-SpaceOPracticalByHardik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceOPracticalByHardik/Pods-SpaceOPracticalByHardik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceOPracticalByHardik/Pods-SpaceOPracticalByHardik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		324729013CAACBE5476AD461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceOPracticalByHardik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18A634E5258238EE00A19A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A635382582428400A19A66 /* DbManager.swift in Sources */,
 				18A634F7258238EE00A19A66 /* SpaceOPracticalByHardik.xcdatamodeld in Sources */,
+				18A635432582475100A19A66 /* UIView+Extension.swift in Sources */,
+				18A6354C25824C4900A19A66 /* EmptyStateGenericScreen.swift in Sources */,
 				18A634F1258238EE00A19A66 /* ViewController.swift in Sources */,
 				18A634ED258238EE00A19A66 /* AppDelegate.swift in Sources */,
+				18A6356225826A4100A19A66 /* Model.swift in Sources */,
+				18A6355A258269B500A19A66 /* Api.swift in Sources */,
+				18A6354725824B0B00A19A66 /* Helper.swift in Sources */,
+				18A635572582514400A19A66 /* UIImageView+Extension.swift in Sources */,
+				185D815C25826DBE00C664FA /* CustomCell.swift in Sources */,
+				18A6353C258243B200A19A66 /* String+Extension.swift in Sources */,
 				18A634EF258238EE00A19A66 /* SceneDelegate.swift in Sources */,
+				18A635402582458400A19A66 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +467,7 @@
 		};
 		18A63501258238EF00A19A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03F119CF10FF59A8E213A79 /* Pods-SpaceOPracticalByHardik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.spaceO.hardikPatel.SpaceOPracticalByHardik;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceO.hardikPatel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,6 +487,7 @@
 		};
 		18A63502258238EF00A19A66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921B62D86EF8A68031A7024B /* Pods-SpaceOPracticalByHardik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.spaceO.hardikPatel.SpaceOPracticalByHardik;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceO.hardikPatel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

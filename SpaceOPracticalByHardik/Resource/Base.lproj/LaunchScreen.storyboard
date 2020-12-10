@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3CY-Wi-GgB">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qj3-cj-XhY">
+                                <rect key="frame" x="87" y="568" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practical Performed By HSPatel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUI-0O-sW4">
+                                        <rect key="frame" x="20" y="38" width="200" height="52"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2635309696" green="0.55337166790000003" blue="0.25502341989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nUI-0O-sW4" secondAttribute="trailing" constant="20" id="K5o-Wa-j4b"/>
+                                    <constraint firstAttribute="width" constant="240" id="VuH-ok-LjL"/>
+                                    <constraint firstAttribute="height" constant="128" id="bWg-yz-u75"/>
+                                    <constraint firstItem="nUI-0O-sW4" firstAttribute="leading" secondItem="qj3-cj-XhY" secondAttribute="leading" constant="20" id="tJF-bR-a5b"/>
+                                    <constraint firstItem="nUI-0O-sW4" firstAttribute="centerY" secondItem="qj3-cj-XhY" secondAttribute="centerY" id="wpI-Ks-u52"/>
+                                    <constraint firstItem="nUI-0O-sW4" firstAttribute="centerX" secondItem="qj3-cj-XhY" secondAttribute="centerX" id="ymA-qL-epC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="qj3-cj-XhY" firstAttribute="centerX" secondItem="3CY-Wi-GgB" secondAttribute="centerX" id="DPq-0f-niX"/>
+                            <constraint firstItem="3CY-Wi-GgB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FZw-cI-eqD"/>
+                            <constraint firstItem="3CY-Wi-GgB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L31-1T-gV4"/>
+                            <constraint firstItem="qj3-cj-XhY" firstAttribute="top" secondItem="3CY-Wi-GgB" secondAttribute="bottom" constant="15" id="TKk-hn-73f"/>
+                            <constraint firstItem="3CY-Wi-GgB" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.223214" id="cMV-ul-PBL"/>
+                            <constraint firstItem="3CY-Wi-GgB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.483092" id="zc4-VS-vNc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="300" height="150"/>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
