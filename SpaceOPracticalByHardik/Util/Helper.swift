@@ -10,28 +10,18 @@ import UIKit
 
 open class Helper : NSObject
 {
-    var myCustomView: EmptyStateGenericScreen?
+   
     static let sharedHelper = Helper()
     
     var routesOffset = 0
     var batchSize = 0
-    
+    var imageUrl = ""
     override init()
     {
-           myCustomView = UIView.fromNib()
+           
     }
     
-    func addEmptyStateDesign(imageName:String,title:String,desc:String,objVw:UIView)
-    {
-        objVw.addSubview(myCustomView!)
-        myCustomView?.frame = CGRect(x: 0, y: 0, width: objVw.frame.size.width, height: objVw.frame.size.height)
-        myCustomView?.emptyStateDesignTitleLabel.text = title
-        myCustomView?.emptyStateDesignDescLabel.text = desc
-    }
-    func removeEmptyStateDesign()
-    {
-        myCustomView?.removeFromSuperview()
-    }
+   
     func getRootViewController() -> UIViewController?
     {
         if let topController = UIApplication.topViewController() {

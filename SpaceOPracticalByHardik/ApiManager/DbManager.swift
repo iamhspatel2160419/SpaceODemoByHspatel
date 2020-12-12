@@ -12,15 +12,6 @@ open class DbManager
     }
     var dictAttributes : NSDictionary!
     
-    
-    
-//    let dictInsertRatings = NSMutableDictionary.init(dictionary: RatingItem as! NSDictionary)
-//    dictInsertRatings.setValue(dictInsertRatings.object(forKey: ""), forKey: "")
-//    dictInsertRatings.setValue(dictInsertRatings.object(forKey: ""), forKey: "")
-//    DbManager.sharedDbManager.insertIntoTable(tableNam
-    
-    
-    
     func insertIntoTable(_ tblName:String,dictInsertData:NSDictionary)
     {
         let managedObject  = NSEntityDescription.insertNewObject(forEntityName: tblName, into: appDelegate.managedObjectContext)
@@ -69,23 +60,24 @@ open class DbManager
         }
         
     }
-//    let bothDayPredicate =
-//        NSPredicate(format: "anniversary contains[c] %@ AND birthday contains[c] %@","\(dateString)","\(dateString)")
-//    let anniversaryPredicate = NSPredicate(format: "anniversary contains[c] %@","\(dateString)")
-//    let birthdayPredicate = NSPredicate(format: "birthday contains[c] %@","\(dateString)")
-//    let compundPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [bothDayPredicate,anniversaryPredicate,birthdayPredicate])
-//
-//    DbManager.sharedDbManager.fetchDataFrom(tableName.Retailer,
-//                                                                         strPredicate: compundPredicate)
-//    { (result) in
-//        if result.count > 0
-//        {
-//            for k in 0..<result.count
-//            {
-//                let objRetailer = result[k] as! ClassName
-//
-    
-    
+
+    func fetchDataFromTable(_ tbleName:String,
+                            completion: (_ result: NSArray)->())
+    {
+        let appDelegate =
+            UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: tbleName)
+        fetchRequest.returnsObjectsAsFaults = false
+        do {
+            let results =
+                try managedContext.fetch(fetchRequest)
+            completion(results as NSArray)
+            //print(results)
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
     func fetchDataFromTable(_ tbleName:String,
                             strPredicate:NSPredicate,
                             completion: (_ result: NSArray)->())
