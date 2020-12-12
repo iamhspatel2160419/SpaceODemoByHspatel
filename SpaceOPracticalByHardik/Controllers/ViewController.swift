@@ -27,10 +27,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : CustomCell
         cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell")! as! CustomCell
+        cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        Helper.sharedHelper.showAlert("test", alertMessage: "test")
+    }
+    
 }
 

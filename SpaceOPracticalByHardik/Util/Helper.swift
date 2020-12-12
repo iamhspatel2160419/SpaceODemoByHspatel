@@ -87,6 +87,37 @@ open class Helper : NSObject
             alert.show()
         }
     }
+    func setIconBeforeLabel(imageName:String,value:String) -> NSAttributedString
+    {
+        let imageAttachment = NSTextAttachment()
+        imageAttachment.image = UIImage(named:imageName)
+        // Set bound to reposition
+        let imageOffsetY: CGFloat = -5.0
+        imageAttachment.bounds = CGRect(x: 0, y: imageOffsetY, width: imageAttachment.image!.size.width, height: imageAttachment.image!.size.height)
+        // Create string with attachment
+        let attachmentString = NSAttributedString(attachment: imageAttachment)
+        // Initialize mutable string
+        let completeText = NSMutableAttributedString(string: "")
+        // Add image to mutable string
+        completeText.append(attachmentString)
+        // Add your text to mutable string
+        let textAfterIcon = NSAttributedString(string: value)
+        completeText.append(textAfterIcon)
+        return completeText
+    }
+    func convertDateToOtherFormat(selectedDate:String,currentDateFormat :String,newDateFormat:String) -> String
+    {
+        let objDateformatter = DateFormatter()
+        objDateformatter.dateFormat = currentDateFormat
+        objDateformatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as! Locale
+        
+        let strDate = objDateformatter.date(from: selectedDate)
+        objDateformatter.dateFormat = newDateFormat
+        objDateformatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as! Locale
+        
+        let strfinalDate = objDateformatter.string(from: strDate!)
+        return strfinalDate
+    }
 }
 extension UIApplication
 {
