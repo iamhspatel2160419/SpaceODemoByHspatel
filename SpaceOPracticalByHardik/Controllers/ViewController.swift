@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if checkButtonLikedOrNot(index:indexPath.row) == true
             {
                 cell.imgLikeDislike.image = UIImage(named: "like")
-                cell.btnLikeDislike.isEnabled = false
+                cell.btnLikeDislike.isEnabled = true
             }
             else
             {
@@ -105,7 +105,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        let tappedImage = tapGestureRecognizer.view  as! UIView
+        let tappedImage = tapGestureRecognizer.view!
         let index = tappedImage.tag
         if let m = model
         {
@@ -118,6 +118,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
+    
+    func updateData(result:NSArray)
+    {
+        
+        let obj = result[0] as! Video
+        if let likeValue = obj.like
+        {
+           if !likeValue.isEmpty
+           {
+              if likeValue == "yes_"
+              {
+                 obj.like = "no_"
+              }
+              else
+              {
+                 obj.like = "yes_"
+              }
+           }
+        }
+        let appdel = UIApplication.shared.delegate as! AppDelegate
+        do
+        {
+            try appdel.managedObjectContext.save()
+            tableView.reloadData()
+        }
+        catch( _)
+        {
+            
+        }
+    }
+    
     @objc func pressButton(_ button: UIButton)
     {
         if let m = model
@@ -129,7 +160,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             { (result) in
               if result.count > 0
               {
-                
+                self.updateData(result: result)
               }
               else
               {

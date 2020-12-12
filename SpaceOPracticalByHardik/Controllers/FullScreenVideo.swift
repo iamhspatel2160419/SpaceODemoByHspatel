@@ -32,7 +32,18 @@ class FullScreenVideo: UIViewController {
             { (result) in
               if result.count > 0
               {
-                
+                    let result = result[0] as! Video
+                    let date = Date()
+                    result.date = date.format()
+                    let appdel = UIApplication.shared.delegate as! AppDelegate
+                    do
+                    {
+                        try appdel.managedObjectContext.save()
+                    }
+                    catch(let _)
+                    {
+                        
+                    }
               }
               else
               {

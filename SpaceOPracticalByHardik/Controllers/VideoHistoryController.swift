@@ -101,12 +101,8 @@ class VideoHistoryController: UIViewController, UITableViewDelegate, UITableView
                     duration = "\(day) days ago"
                 }
             }
-            print(duration)
             cell.lblDate.text = duration
-            
         }
-        
-        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
